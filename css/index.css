@@ -1,18 +1,138 @@
+a {
+    text-decoration: none;
+    text-decoration-color: none;
+    color: black;
+    margin-right: 5px;
+}
+
 body {
     background-color: #fff9f1;
-    margin: auto;
+    font-family: Roboto,Inconsolata;
+}
+
+li {
+    list-style-type: none;
+    display: inline; 
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.grid-container {
+    display: grid;
+
+    grid-template-areas:
+        'head'
+        'nav-bar' 
+        'main'; 
+    grid-template-rows: 50px 40px 1fr; 
+
+    height: 100vh;
+}
+
+.header {
+    grid-area: head;
+    margin-top: 15px;
+}
+
+.header-nav-buttons {
+    float: right;
+    padding-top: 7.4px;
+    margin-right: 3px;
+}
+#name { 
+    float: left;
+    font-size: 2em;
+    margin-left: 17px;
+    margin-right: 30px;
+}
+
+.main {
+    grid-area: main;
+    margin-left: 10px;
+    margin-right: 10px;
     text-align: center;
 }
 
+p {
+    text-align: justify;
+    font-size: 16px;
+}
 
-@media only and and (min-width: 600px) {
+.card {
+    background-color: rgb(240, 239, 238);
+    border-radius: 4px;
+    width: 100%;
+    height: 55vh;
+    font-display: .5em;
+}
+
+.card .image {
+    height: 70%;
+    border-radius: 4px;
+}
+
+.card .box {
+    color: rgb(14, 13, 1);
+    height: 25%;
+    text-align: left;
+    
+    padding-top: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+
+}
+
+.card .title {
+    padding-top: 1px;
+    color: rgb(72, 72, 72);
+}
+
+
+
+
+@media only screen and (min-width: 600px) {
     body {
-        background-color: #d7d1c9
+        background-color: #f3f3f3
+    }
+    .grid-container {
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+
+    .header {
+        margin-top: 45px;
+    }
+
+    h2 {
+        text-align: left;
+    }
+
+    .card {
+        width: 60%;
     }
 }
 
 @media only screen and (min-width: 1024px) {
     body {
-        background-color: #99b19c
+        background-color: #99b19c;
+    }
+    .grid-container {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+
+    .card {
+        width: 47%;
+    }
+
+    .card .image {
+        height: 65%;
     }
 }
+
+

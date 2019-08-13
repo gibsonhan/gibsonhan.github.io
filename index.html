@@ -4,28 +4,52 @@
         <meta charset="UTF-8" />
         <title>Gibson Han</title>
         <meta name="viewport" content="minius-scale=1 width=device-width, inital-scale=1 shrink-to-fit=no">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" /> 
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Inconsolata" rel="stylesheet">
         <link rel="stylesheet" href="css/index.css"/>
     </head>
     <body>
-        <head>
-            <h1>Gibson Han</h1>
-        </head>
-        <main>
-            <h2>Content</h2>
-            <div id="like_button_container"></div>
-        </main>
-        <footer>
-            <h4>footer</h4>
-        </footer>
-
-        
+        <div class="grid-container">
+            <header class="header">
+                    <div id ="name">Gibson Han</div> 
+                    <div class="header-nav-buttons">
+                            <div class="header-nav-buttons">
+                                <a href="https://github.com/gibsonhan">github/</a>
+                                <a href="https://www.linkedin.com/in/gibsonhan/"">linkedin/</a>
+                                <a href="#"><img src ="/">resume</a>
+                            </div>
+            </header>
+            <main class="main">
+                <div class="about-wrapper">
+                    <h2>About Me</h2>
+                    <p>
+                        Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+                        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi 
+                        architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia 
+                        voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos 
+                        consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse 
+                        quam nihilconsequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+                    </p>
+                </div>
+                <div class="project-wrapper">
+                    <h2 id ="projects">Projects</h2>
+                    <div id="project-list-container"></div>
+                    <div id="like_button_container"></div>
+                </div>
+                <footer class="footer">
+                    <h4>footer</h4>
+                </footer>
+            </main>
+            
+        </div>
     <!-- Load React. -->
     <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
         <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
         <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
         <!-- Load our React component. -->
-        <script src="like_button.js"></script>
+        
+        <script src="Project.js"></script>
     </body>
 </html>
+
+<!--[ ] how to add multiple react component/object without install a library-i<script src="like_button.js"></script>->
