@@ -65,25 +65,24 @@ p {
     background-color: rgb(240, 239, 238);
     border-radius: 5px;
     width: 100%;
-    height: 55vh;
     font-display: .5em;
     margin-bottom: 15px; 
 }
 
-.card .image {
-    height: 70%;
+.card .image img {
     border-radius: 5px;
-    background: rgb(140, 164, 189);
+    height: 70%;
+    width: 100%;
 }
 
 .card .box {
     color: rgb(14, 13, 1);
-    height: 25%;
+    height: 30%;
     text-align: left;
     
-    padding-top: 8px;
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 5px;
 }
 
 .card .title {
@@ -121,7 +120,6 @@ p {
         margin-left: 15%;
         margin-right: 15%;
     }
-
 
     .card {
         width: 47%;

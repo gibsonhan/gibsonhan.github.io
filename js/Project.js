@@ -1,8 +1,7 @@
 'use strict';
 
 const projects = [
-            { id: 1, img: '#', title: 'MERN CRUD', description: 'Add company profiles, view in a list and edit', tecStack: ['Express ', 'MongoDB ', 'Node ', 'React ']},
-            { id: 2, img: '#', title: 'test title', description: 'description', tecStack: ['webpack', 'babel', 'wordpress']},
+            { id: 1, img: './assests/mobile_mern_crud_landing.png', title: 'MERN CRUD', description: 'Add company profiles, view in a list and edit', tecStack: ['Express ', 'MongoDB ', 'Node ', 'React ']},
         ]
 
 const e = React.createElement;
@@ -14,7 +13,7 @@ function ProjectCard (props){
         'div', {key: 'Card', className: 'card'},
         [
             e('div', {key: 'img', className: 'image'},
-                e('div', {dangerouslySetInnerHTML: {__html: image}})
+                e('div', {className: 'image-wrapper', dangerouslySetInnerHTML: {__html: image}})
             ),
             e('div', {key: 'box', className: 'box'},
                 [
