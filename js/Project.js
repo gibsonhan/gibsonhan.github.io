@@ -1,27 +1,33 @@
 'use strict';
 
-const projects = [
-            { id: 1, img: './assests/mobile_mern_crud_landing.png', title: 'MERN CRUD', description: 'Add company profiles, view in a list and edit', tecStack: ['Express ', 'MongoDB ', 'Node ', 'React ']},
-        ]
+const projects = 
+    [{
+        id: 1,
+        description: 'Login w/ JWT auth and create, read, and update profile with React', 
+        img: './assests/mobile_mern_crud_landing.png',
+        tecStack: ['Express ', 'MongoDB ', 'Node ', 'React '],
+        title: 'MERN CRUD', 
+        url: 'https://github.com/gibsonhan/MERN_CRUD'
+    }]
 
 const e = React.createElement;
 
 function ProjectCard (props){
-    const {img, title, description, tecStack} = props.card;
+    const {img, description, tecStack, title, url} = props.card;
     const image = `<img src=${img}>`
-    return e(
-        'div', {key: 'Card', className: 'card'},
-        [
-            e('div', {key: 'img', className: 'image'},
-                e('div', {className: 'image-wrapper', dangerouslySetInnerHTML: {__html: image}})
-            ),
-            e('div', {key: 'box', className: 'box'},
+    return e('div', {key: 'Card', className: 'card' },
+            e('a', { key: 'link', href: url},
                 [
-                    e('div', {key: 'title', className: 'title'}, title),
-                    e('div', {key: 'summary', className: 'description'}, description ),
-                    e('div', {key: 'keywords', className: 'keywords'}, tecStack)
-                ]) 
-        ]
+                    e('div', {key: 'img', className: 'image'},
+                    e('div', {className: 'image-wrapper', dangerouslySetInnerHTML: {__html: image}})),
+                    e('div', {key: 'box', className: 'box'},
+                        [
+                            e('div', {key: 'title', className: 'title'}, title),
+                            e('div', {key: 'summary', className: 'description'}, description ),
+                            e('div', {key: 'keywords', className: 'keywords'}, tecStack),
+                        ]) 
+                ]
+            )
     );
 }
 
