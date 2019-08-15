@@ -1,13 +1,20 @@
 'use strict';
 
+const projects = [
+            { id: 1, img: '#', title: 'MERN CRUD', description: 'Add company profiles, view in a list and edit', tecStack: ['Express ', 'MongoDB ', 'Node ', 'React ']},
+            { id: 2, img: '#', title: 'test title', description: 'description', tecStack: ['webpack', 'babel', 'wordpress']},
+        ]
+
 const e = React.createElement;
 
 function ProjectCard (props){
     const {img, title, description, tecStack} = props.card;
+    const image = `<img src=${img}>`
     return e(
         'div', {key: 'Card', className: 'card'},
         [
             e('div', {key: 'img', className: 'image'},
+                e('div', {dangerouslySetInnerHTML: {__html: image}})
             ),
             e('div', {key: 'box', className: 'box'},
                 [
@@ -19,16 +26,10 @@ function ProjectCard (props){
     );
 }
 
-let data = [
-            {id: 1, img: 'assets/image.png', title: 'test title', description: 'description', tecStack: ['webpack ', 'babel ', 'wordpress ']},
-            {id: 2, img: 'assets/image.png', title: 'test title', description: 'description', tecStack: ['webpack', 'babel', 'wordpress']},
-            {id: 3, img: 'assets/image.png', title: 'test title', description: 'description', tecStack: ['webpack', 'babel', 'wordpress']}
-        ]
-
 class Project extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { projects: data };
+    this.state = { projects: projects };
   }
   render() {
     const data = this.state.projects
