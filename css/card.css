@@ -3,15 +3,16 @@
     border-radius: 5px;
     width: 100%;
     font-display: .5em;
-    margin-bottom: 15px; 
 }
 
+.card a {
+    margin-right: 0;
+}
 .card .image img {
     border-radius: 5px;
     height: 70%;
     width: 100%;
 }
-
 .card .box {
     color: rgb(14, 13, 1);
     height: 30%;
