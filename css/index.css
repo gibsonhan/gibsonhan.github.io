@@ -6,7 +6,6 @@ a {
 }
 
 body {
-    background-color: #fff9f1;
     font-family: Roboto,Inconsolata;
 }
 
@@ -91,9 +90,6 @@ p {
 }
 
 @media only screen and (min-width: 600px) {
-    body {
-        background-color: #f3f3f3
-    }
     .grid-container {
         margin-left: 7%;
         margin-right: 7%;
@@ -113,9 +109,6 @@ p {
 }
 
 @media only screen and (min-width: 1024px) {
-    body {
-        background-color: #99b19c;
-    }
     .grid-container {
         margin-left: 15%;
         margin-right: 15%;
