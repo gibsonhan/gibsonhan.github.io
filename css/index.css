@@ -60,34 +60,6 @@ p {
     font-size: 16px;
 }
 
-.card {
-    background-color: rgb(240, 239, 238);
-    border-radius: 5px;
-    width: 100%;
-    font-display: .5em;
-    margin-bottom: 15px; 
-}
-
-.card .image img {
-    border-radius: 5px;
-    height: 70%;
-    width: 100%;
-}
-
-.card .box {
-    color: rgb(14, 13, 1);
-    height: 30%;
-    text-align: left;
-    
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 5px;
-}
-
-.card .title {
-    padding-top: 1px;
-    color: rgb(72, 72, 72);
-}
 
 @media only screen and (min-width: 600px) {
     .grid-container {
@@ -102,10 +74,6 @@ p {
     h2 {
         text-align: left;
     }
-
-    .card {
-        width: 55%
-    }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -114,13 +82,6 @@ p {
         margin-right: 15%;
     }
 
-    .card {
-        width: 47%;
-    }
-
-    .card .image {
-        height: 65%;
-    }
-}
+} 
 
 
