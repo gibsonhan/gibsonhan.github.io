@@ -67,6 +67,14 @@ p {
         margin-right: 7%;
     }
 
+    .card-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto; 
+        
+        grid-gap: 3px;
+    }
+
     .header {
         margin-top: 45px;
     }
@@ -81,6 +89,13 @@ p {
         margin-left: 15%;
         margin-right: 15%;
     }
+
+     .card-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto; 
+        
+      
 
 } 
 

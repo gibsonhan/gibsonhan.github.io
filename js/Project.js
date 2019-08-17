@@ -1,14 +1,40 @@
 'use strict';
 
 const projects = 
-    [{
-        id: 1,
+    [
+        { id: 1,
         description: 'Login w/ JWT auth and create, read, and update profile with React', 
         img: './assests/mobile_mern_crud_landing.png',
         tecStack: ['Express ', 'MongoDB ', 'Node ', 'React '],
         title: 'MERN CRUD', 
         url: 'https://github.com/gibsonhan/MERN_CRUD'
-    }]
+        },
+        {
+        id: 2,
+        description: 'Login w/ JWT auth and create, read, and update profile with React', 
+        img: './assests/mobile_mern_crud_landing.png',
+        tecStack: ['Express ', 'MongoDB ', 'Node ', 'React '],
+        title: 'MERN CRUD', 
+        url: 'https://github.com/gibsonhan/MERN_CRUD'
+        },
+        {
+        id: 3,
+        description: 'Login w/ JWT auth and create, read, and update profile with React', 
+        img: './assests/mobile_mern_crud_landing.png',
+        tecStack: ['Express ', 'MongoDB ', 'Node ', 'React '],
+        title: 'MERN CRUD', 
+        url: 'https://github.com/gibsonhan/MERN_CRUD'
+        },
+        {
+        id: 4,
+        description: 'Login w/ JWT auth and create, read, and update profile with React', 
+        img: './assests/mobile_mern_crud_landing.png',
+        tecStack: ['Express ', 'MongoDB ', 'Node ', 'React '],
+        title: 'MERN CRUD', 
+        url: 'https://github.com/gibsonhan/MERN_CRUD'
+        }
+
+    ]
 
 const e = React.createElement;
 
@@ -39,7 +65,7 @@ class Project extends React.Component {
   render() {
     const data = this.state.projects
     return e(
-        "div", null, data.map(data => e(ProjectCard, {key: data.id, card: data}))
+        "div", {key:'cardList', className: 'card-list'}, data.map(data => e(ProjectCard, {key: data.id, card: data}))
     );
   }
 }
