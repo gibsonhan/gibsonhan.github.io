@@ -11,29 +11,20 @@ const projects =
         },
         {
         id: 2,
-        description: 'Login w/ JWT auth and create, read, and update profile with React', 
-        img: './assests/mobile_mern_crud_landing.png',
-        tecStack: ['Express ', 'MongoDB ', 'Node ', 'React '],
-        title: 'MERN CRUD', 
-        url: 'https://github.com/gibsonhan/MERN_CRUD'
+        description: 'Project Link to Inspirational Landing Pages', 
+        img: './assests/react_component_temp.png',
+        tecStack: ['HTML5', 'Javascript', 'CSS'],
+        title: 'Landing Page Inspiration', 
+        url: 'https://github.com/gibsonhan/landing-page'
         },
         {
         id: 3,
-        description: 'Login w/ JWT auth and create, read, and update profile with React', 
-        img: './assests/mobile_mern_crud_landing.png',
-        tecStack: ['Express ', 'MongoDB ', 'Node ', 'React '],
-        title: 'MERN CRUD', 
-        url: 'https://github.com/gibsonhan/MERN_CRUD'
+        description: 'Master React Folder, contains different components built with react', 
+        img: './assests/react_component_temp.png',
+        tecStack: ['React'],
+        title: 'React Component folder', 
+        url: 'https://github.com/gibsonhan/master.react'
         },
-        {
-        id: 4,
-        description: 'Login w/ JWT auth and create, read, and update profile with React', 
-        img: './assests/mobile_mern_crud_landing.png',
-        tecStack: ['Express ', 'MongoDB ', 'Node ', 'React '],
-        title: 'MERN CRUD', 
-        url: 'https://github.com/gibsonhan/MERN_CRUD'
-        }
-
     ]
 
 const e = React.createElement;

@@ -8,9 +8,9 @@ to do list
 #priorty    :[n] = 0...7, urgent to least urgent
 
 [status][difficulty][priority]
-[ ][0][1] update Aboute me section
-[ ][0][1] remove color from media queries
-[ ][1][3] implment: when user uses a screen bigger thatn  s > 450px, the media querie adjust to 2 colum
+[x][0][1] update Aboute me section
+[x][0][1] remove color from media queries
+[x][1][3] implment: when user uses a screen bigger thatn  s > 450px, the media querie adjust to 2 colum
 [ ][3][4] implement: when user hover over the picture
             - icon will show 2 buttons
                 - one to the source code
@@ -18,7 +18,7 @@ to do list
                     - if deployment is not avaliable (icon is like a )
 
 
-[ ][ ][ ] add shadow to the project component
+[x][0][0] add shadow to the project component
 
 
 [ ][ ][ ] - interest/achievement.html page on things I am proud of 
