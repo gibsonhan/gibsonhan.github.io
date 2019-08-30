@@ -11,14 +11,6 @@ const projects =
         },
         {
         id: 2,
-        description: 'Project Link to Inspirational Landing Pages', 
-        img: './assests/react_component_temp.png',
-        tecStack: ['HTML5', 'Javascript', 'CSS'],
-        title: 'Landing Page Inspiration', 
-        url: 'https://github.com/gibsonhan/landing-page'
-        },
-        {
-        id: 3,
         description: 'Master React Folder, contains different components built with react', 
         img: './assests/react_component_temp.png',
         tecStack: ['React'],
